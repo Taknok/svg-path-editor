@@ -343,31 +343,32 @@
                 <mat-icon svgIcon="zoom_out"></mat-icon> 
             </button>
         </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" app-canvas  [attr.viewBox]="viewPortX+' '+viewPortY+' '+viewPortWidth+' '+viewPortHeight" [ngClass]="{preview:preview}"
-            [parsedPath]="parsedPath"
-            [targetPoints]="targetPoints"
-            [controlPoints]="controlPoints"
-            [(draggedPoint)]="draggedPoint"
-            [(focusedItem)]="focusedItem"
-            [(hoveredItem)]="hoveredItem"
-            [(wasCanvasDragged)]="wasCanvasDragged"
-            [draggedIsNew]="draggedIsNew"
-            [decimals]="decimals"
-            [viewPortX]="viewPortX"
-            [viewPortY]="viewPortY"
-            [viewPortWidth]="viewPortWidth"
-            [viewPortHeight]="viewPortHeight"
-            [strokeWidth]="strokeWidth"
-            [preview]="preview"
-            [showTicks]="showTicks"
-            [tickInterval]="tickInterval"
-            (afertModelChange)="afertModelChange()"
-            (dragging)="setIsDragging($event)"
-            (canvasWidthChange)="canvasWidth = $event"
-            (canvasHeightChange)="canvasHeight = $event"
-            (viewPort)="updateViewPort($event.x, $event.y, $event.w, $event.h, $event.force)"
-        ></svg>
+        <div app-image-bg>
+            <svg xmlns="http://www.w3.org/2000/svg" app-canvas [attr.viewBox]="viewPortX+' '+viewPortY+' '+viewPortWidth+' '+viewPortHeight" [ngClass]="{preview:preview}"
+                [parsedPath]="parsedPath"
+                [targetPoints]="targetPoints"
+                [controlPoints]="controlPoints"
+                [(draggedPoint)]="draggedPoint"
+                [(focusedItem)]="focusedItem"
+                [(hoveredItem)]="hoveredItem"
+                [(wasCanvasDragged)]="wasCanvasDragged"
+                [draggedIsNew]="draggedIsNew"
+                [decimals]="decimals"
+                [viewPortX]="viewPortX"
+                [viewPortY]="viewPortY"
+                [viewPortWidth]="viewPortWidth"
+                [viewPortHeight]="viewPortHeight"
+                [strokeWidth]="strokeWidth"
+                [preview]="preview"
+                [showTicks]="showTicks"
+                [tickInterval]="tickInterval"
+                (afertModelChange)="afertModelChange()"
+                (dragging)="setIsDragging($event)"
+                (canvasWidthChange)="canvasWidth = $event"
+                (canvasHeightChange)="canvasHeight = $event"
+                (viewPort)="updateViewPort($event.x, $event.y, $event.w, $event.h, $event.force)"
+            ></svg>
+        </div>
     </div>
 </div>
 

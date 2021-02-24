@@ -26,6 +26,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { FormatterDirective } from './formatter/formatter.directive';
 import { KeyboardNavigableDirective } from './keyboard-navigable/keyboard-navigable.directive';
 import { ExportComponent, ExportDialogComponent } from './export/export.component';
+import { ImageBgComponent } from './image-bg/image-bg.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ExportComponent, ExportDialogComponent } from './export/export.componen
     ExportDialogComponent,
     OpenDialogComponent,
     FormatterDirective,
-    KeyboardNavigableDirective
+    KeyboardNavigableDirective,
+    ImageBgComponent
   ],
   imports: [
     BrowserModule,
